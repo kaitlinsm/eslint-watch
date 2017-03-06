@@ -1,10 +1,11 @@
 {
   "name": "eslint-watch",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Run eslint with watch mode",
   "main": "./src/cli.js",
   "scripts": {
     "eslint": "node ./bin/esw --no-ignore --color",
+    "clean": "rm -rf build node_modules",
     "lint": "node ./bin/esw",
     "lw": "node ./bin/esw -w",
     "test": "mocha tests --timeout 10000 --recursive --retries 3 -r tests/globals --compilers js:babel-core/register",
@@ -66,6 +67,7 @@
     "babel-preset-env": "^1.1.8",
     "chai": "^3.5.0",
     "eslint": "3",
+    "eslint-config-rizowski": "^1.0.2",
     "istanbul": "^0.4.5",
     "mocha": "^3.2.0",
     "mocha-sinon": "^1.1.6",
